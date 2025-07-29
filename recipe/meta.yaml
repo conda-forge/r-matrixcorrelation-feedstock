@@ -1,4 +1,4 @@
-{% set version = "0.10.0" %}
+{% set version = "0.10.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/MatrixCorrelation_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/MatrixCorrelation/MatrixCorrelation_{{ version }}.tar.gz
-  sha256: 7e3d1af2c0436b0ee1ee2b759a7d05b989ce48da43c9847b60a7489a59f043d9
+  sha256: aedafd58eb6f021393191c9cb4ad919003bda0fe8e2fcd598c7753f7a747344e
 
 build:
-  number: 3
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
